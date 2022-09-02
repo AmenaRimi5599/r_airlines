@@ -1,5 +1,5 @@
 import React from "react";
-import { BiUserCircle } from "react-icons/bi";
+import { HiOutlineUserCircle } from "react-icons/hi";
 import { SiQatarairways } from "react-icons/si";
 import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -47,12 +47,13 @@ const MainNav = () => {
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <Link to="help">Help</Link>{" "}
+            <Link to="help">Help</Link>
             <Link to="search">
-              <FiSearch size={27} color="black" />{" "}
-            </Link>{" "}
-            <Link to="login">
-              <BiUserCircle size={27} color="black" /> login | Sign in
+              <FiSearch size={27} color="black" />
+            </Link>
+            <Link to="login" className="loginsignupicon">
+              <HiOutlineUserCircle size={27} color="black" />
+              <label>login | Sign in</label>
             </Link>
           </form>
         </div>

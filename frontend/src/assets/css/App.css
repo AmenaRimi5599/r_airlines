@@ -1,6 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Urbanist", sans-serif;
+}
+
 .nav-item a {
   font-size: 27px;
 }
 .form-inline a {
   font-size: 18px;
+  padding-left: 25px;
+  font-weight: 400;
+  line-height: 1px;
+}
+a:hover {
+  text-decoration: none;
+}
+.loginsignupicon {
+  display: flex;
+}
+.loginsignupicon label {
+  padding-left: 5px;
 }

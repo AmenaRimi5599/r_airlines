@@ -4,6 +4,7 @@ import MainNav from "./MainNav";
 const Home = () => {
   return (
     <>
+      <div></div>
       <div className="container">
         <MainNav />
       </div>
