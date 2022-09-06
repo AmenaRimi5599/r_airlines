@@ -2,15 +2,41 @@
 * {
   font-family: "Urbanist", sans-serif;
 }
+.headercontainer {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.bg-light {
+  background-color: transparent !important;
+}
 
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+.logoposition {
+  height: 55px;
+}
+
+.nav-background {
+  background: url("../img/background1.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .nav-item a {
   font-size: 27px;
 }
 .form-inline a {
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 25px;
   font-weight: 400;
   line-height: 1px;
+  color: #fff;
 }
 a:hover {
   text-decoration: none;
@@ -20,4 +46,32 @@ a:hover {
 }
 .loginsignupicon label {
   padding-left: 5px;
+}
+
+div.banner-outside {
+  height: 500px;
+  width: 100%;
+}
+
+div.banner {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.banner-outside {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.banner a {
+  padding: 15px 30px 15px;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+}
+.banner p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
