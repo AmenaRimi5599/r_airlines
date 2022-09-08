@@ -1,10 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500&family=Poppins:wght@500;600;800;900&display=swap");
 * {
-  font-family: "Urbanist", sans-serif;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 0.5px;
 }
+#navbarSupportedContent {
+  margin-top: -15px;
+}
+
 .headercontainer {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 8.2%;
+  padding-left: 8.2%;
 }
 .bg-light {
   background-color: transparent !important;
@@ -21,6 +26,9 @@
 }
 .logoposition {
   height: 55px;
+  margin-left: -25px;
+  position: relative;
+  top: -8px;
 }
 
 .nav-background {
@@ -49,29 +57,40 @@ a:hover {
 }
 
 div.banner-outside {
-  height: 500px;
+  height: 100%;
   width: 100%;
+  padding-top: 158px;
+  padding-bottom: 100px;
 }
 
 div.banner {
+  color: #fff;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.banner-outside {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-.banner a {
-  padding: 15px 30px 15px;
-  border: 2px solid white;
+
+div.banner a {
+  padding: 13px 30px 13px;
+  border: 1px solid white;
   color: #fff;
   border-radius: 50px;
   font-size: 18px;
+  position: relative;
+  top: 20px;
 }
-.banner p {
+div.banner a:hover {
+  background-color: #fff;
+  color: purple;
+}
+div.banner p {
+  margin-top: 26px;
+  font-size: 20px;
+  font-weight: 400;
+}
+div.banner h1 {
+  font-size: 44px;
+  font-weight: 300;
   margin-top: 20px;
   margin-bottom: 20px;
 }
