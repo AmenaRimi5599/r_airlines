@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoAirplaneOutline } from "react-icons/io5";
 import { FaRegListAlt } from "react-icons/fa";
 import { BsCheckCircle } from "react-icons/bs";
@@ -11,6 +11,7 @@ import CheckIn from "./CheckIn";
 import FlightStatus from "./FlightStatus";
 
 const Home = () => {
+  const [componentData, setComponentData] = useState("Book");
   return (
     <>
       <div className="nav-background">
@@ -32,21 +33,37 @@ const Home = () => {
         <div className="homecontent2">
           <div className="mainsubnav">
             <div className="row subnav">
-              <div className="col-sm-12 col-md-3" id="subnavleft">
+              <div
+                className="col-sm-12 col-md-3"
+                onClick={() => setComponentData("Book")}
+              >
                 <IoAirplaneOutline size={27} color="white" /> <span>Book</span>
               </div>
-              <div className="col-sm-12 col-md-3">
+              <div
+                className="col-sm-12 col-md-3"
+                onClick={() => setComponentData("MyTrip")}
+              >
                 <FaRegListAlt size={27} color="white" /> <span>My Trip</span>
               </div>
-              <div className="col-sm-12 col-md-3">
+              <div
+                className="col-sm-12 col-md-3"
+                onClick={() => setComponentData("CheckIn")}
+              >
                 <BsCheckCircle size={27} color="white" /> <span>Check In</span>
               </div>
-              <div className="col-sm-12 col-md-3" id="subnavright">
+              <div
+                className="col-sm-12 col-md-3"
+                onClick={() => setComponentData("FlightStatus")}
+              >
                 <RiMapPinTimeLine size={27} color="white" />{" "}
                 <span>Flight Status</span>
               </div>
             </div>
           </div>
+          {componentData === "Book" && <Book />}
+          {componentData === "MyTrip" && <MyTrip />}
+          {componentData === "CheckIn" && <CheckIn />}
+          {componentData === "FlightStatus" && <FlightStatus />}
         </div>
       </div>
     </>
