@@ -96,11 +96,11 @@ div.banner h1 {
 }
 .homecontent2 {
   width: 100%;
-  height: 300px;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.241);
   margin-top: -60px;
   border-radius: 25px;
   background-color: #fff;
+  margin-bottom: 30px;
 }
 .homecontent-subnavbar .subnavbar {
   text-align: center;
@@ -154,9 +154,26 @@ table {
 }
 tr td {
   border: 1px solid #ddd;
+  padding-left: 13px;
 }
 #fromtableid {
   width: 24%;
+  height: 63px;
+}
+#fromtableid2 {
+  width: 60%;
+  height: 115px;
+}
+#totableid2 {
+  width: 40%;
+  height: 115px;
+}
+#fromtableid2 label {
+  margin-left: 16px;
+  margin-right: 32px;
+  padding-top: 10px;
+}
+#departureid {
 }
 #totableid {
   width: 24%;
@@ -169,4 +186,25 @@ tr td {
 }
 #passengertableid {
   width: 20%;
+}
+.labelstopover {
+  font-size: 20px;
+  margin-left: 18px;
+  /* line-height: 30px; */
+  padding-top: 8px;
+  padding-bottom: 10px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+.labelstopover a {
+  color: #520c31;
+}
+.flightfooter {
+  text-align: -webkit-right;
+  padding: 18px;
+}
+.flightfooter span {
+  color: #520c31;
+  font-size: 20px;
+  margin-right: 10px;
 }

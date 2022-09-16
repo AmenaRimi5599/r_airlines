@@ -12,6 +12,10 @@ const Flight = () => {
           <td id="passengertableid">Passenger/Class</td>
         </tr>
       </table>
+      <div className="flightfooter">
+        <span>+ Add promo code</span>
+        <button className="btn btn-warning btn-lg">Show Flights</button>
+      </div>
     </>
   );
 };
